@@ -1,17 +1,4 @@
-pandoc --latex-engine xelatex --template pdf-template.tex `
-	docs\intro\index.markdown `
-	docs\intro\what-is-nosql.markdown `
-	docs\intro\what-is-a-document-database.markdown `
-	docs\intro\ravendb-in-a-nutshell.markdown `
-	docs\intro\basic-concepts.markdown `
-	docs\intro\safe-by-default.markdown `
-	docs\intro\quickstart\index.markdown `
-	docs\intro\quickstart\adding-ravendb-to-your-application.markdown `
-	docs\intro\quickstart\adding-ravendb-through-nuget.markdown `
-	docs\intro\system-requirements.markdown `
-	docs\intro\building-from-source.markdown `
-	docs\intro\what-is-new.markdown `
-	-o RavenDB-2.5.pdf
+pandoc --latex-engine xelatex --template pdf-template.tex all.markdown -o RavenDB-2.5.pdf
 
 ## TODO: Table of Contents
 ## TODO: styling code
